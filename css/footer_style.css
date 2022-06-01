@@ -1,0 +1,10 @@
+* {
+margin: 0;
+}
+
+footer {
+    background-color: gray;
+    height: 4em;
+    width: 100vw;
+    bottom: 0;
+}
