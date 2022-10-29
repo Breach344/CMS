@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     if (!empty($username) && !empty($password) && !is_numeric($username)) {
 
-        $query = "select * from c_users where username = '$username' limit 1";
+        $query = "select * from c_users where username = '$username' and password = '$password' limit 1";
 
         $result = mysqli_query($conn, $query);
 
